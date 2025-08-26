@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'KaartKeyboard' in project 'KaartKeyboard'
+➜ Explicit dependency on target 'Kaart Keyboard' in project 'KaartKeyboard'
+Target 'Kaart Keyboard' in project 'KaartKeyboard' (no dependencies)

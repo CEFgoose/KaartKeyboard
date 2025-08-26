@@ -1,0 +1,18 @@
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Helper/CircularArray.swift":
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/CircularArray.d"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/CircularArray.swiftdeps"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/CircularArray.dia"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/CircularArray.swiftconstvalues"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/CircularArray.o"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/LanguageProviders/LanguageProvider.swift":
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/LanguageProvider.d"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/LanguageProvider.swiftconstvalues"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/LanguageProvider.o"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/LanguageProvider.swiftdeps"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/LanguageProvider.dia"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Language.swift":
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/Language.swiftconstvalues"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/Language.dia"
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/Language.d"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/Language.o"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/Language.swiftdeps"

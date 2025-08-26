@@ -1,0 +1,18 @@
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Custom Views/Buttons/SuggestionButton.swift":
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/SuggestionButton.d"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/SuggestionButton.swiftdeps"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/SuggestionButton.dia"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/SuggestionButton.o"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/SuggestionButton.swiftconstvalues"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Extensions/StringSubscripts.swift":
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/StringSubscripts.dia"
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/StringSubscripts.d"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/StringSubscripts.swiftconstvalues"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/StringSubscripts.o"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/StringSubscripts.swiftdeps"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/LanguageProviders/DefaultLanguageProvider.swift":
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/DefaultLanguageProvider.swiftconstvalues"
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/DefaultLanguageProvider.d"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/DefaultLanguageProvider.dia"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/DefaultLanguageProvider.o"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/DefaultLanguageProvider.swiftdeps"

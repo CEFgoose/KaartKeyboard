@@ -1,0 +1,78 @@
+{
+  "" : {
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KaartKeyboard-master.dia",
+    "emit-module-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KaartKeyboard-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KaartKeyboard-master-emit-module.dia",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KaartKeyboard-master.swiftdeps"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/AppDelegate.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/AppDelegate~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/DetailViewController.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/DetailViewController~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/LanguagesTableViewController.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/LanguagesTableViewController~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/MasterTableViewController.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/MasterTableViewController~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/SplitViewController.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/SplitViewController~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Custom Views/Buttons/KeyPop.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/KeyPop~partial.swiftmodule"
+  },
+  "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/KaartKeyboard.build/Objects-normal/x86_64/GeneratedAssetSymbols~partial.swiftmodule"
+  }
+}

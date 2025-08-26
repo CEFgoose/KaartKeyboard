@@ -1,0 +1,158 @@
+{
+    "title": "romanian",
+    "rows": [
+        {
+            "row": [
+                {
+                    "primary": "q",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "w",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "e",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "r",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "t",
+                    "secondary": "",
+                    "tertiary": ["ț"]
+                },
+                {
+                    "primary": "y",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "u",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "i",
+                    "secondary": "",
+                    "tertiary": ["î", "ï", "í", "ī", "į", "ì"]
+                },
+                {
+                    "primary": "o",
+                    "secondary": "",
+                    "tertiary": []
+                },
+                {
+                    "primary": "p",
+                    "secondary": "",
+                    "tertiary": []
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "primary": "a",
+                    "secondary": "@",
+                    "tertiary": ["à", "á", "â", "ă", "ä", "æ", "ã", "å", "ā"]
+                },
+                {
+                    "primary": "s",
+                    "secondary": "#",
+                    "tertiary": ["ß", "ș", "ś", "š"]
+                },
+                {
+                    "primary": "d",
+                    "secondary": "$",
+                    "tertiary": []
+                },
+                {
+                    "primary": "f",
+                    "secondary": "&",
+                    "tertiary": []
+                },
+                {
+                    "primary": "g",
+                    "secondary": "*",
+                    "tertiary": []
+                },
+                {
+                    "primary": "h",
+                    "secondary": "(",
+                    "tertiary": []
+                },
+                {
+                    "primary": "j",
+                    "secondary": ")",
+                    "tertiary": []
+                },
+                {
+                    "primary": "k",
+                    "secondary": "'",
+                    "tertiary": []
+                },
+                {
+                    "primary": "l",
+                    "secondary": "\"",
+                    "tertiary": []
+                }
+            ]
+        },
+        {
+            "row": [
+                {
+                    "primary": "z",
+                    "secondary": "_",
+                    "tertiary": []
+                },
+                {
+                    "primary": "x",
+                    "secondary": "-",
+                    "tertiary": []
+                },
+                {
+                    "primary": "c",
+                    "secondary": "@",
+                    "tertiary": []
+                },
+                {
+                    "primary": "v",
+                    "secondary": "=",
+                    "tertiary": []
+                },
+                {
+                    "primary": "b",
+                    "secondary": "/",
+                    "tertiary": []
+                },
+                {
+                    "primary": "n",
+                    "secondary": ";",
+                    "tertiary": []
+                },
+                {
+                    "primary": "m",
+                    "secondary": ":",
+                    "tertiary": []
+                },
+                {
+                    "primary": ",",
+                    "secondary": "!",
+                    "tertiary": []
+                },
+                {
+                    "primary": ".",
+                    "secondary": "?",
+                    "tertiary": []
+                }
+            ]
+        }
+    ]
+}
+

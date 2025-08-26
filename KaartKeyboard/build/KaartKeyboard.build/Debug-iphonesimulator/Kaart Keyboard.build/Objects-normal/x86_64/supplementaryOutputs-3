@@ -1,0 +1,18 @@
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Custom Views/PredictiveTextScrollView.swift":
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/PredictiveTextScrollView.d"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/PredictiveTextScrollView.swiftdeps"
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/PredictiveTextScrollView.o"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/PredictiveTextScrollView.swiftconstvalues"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/PredictiveTextScrollView.dia"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/ELDeveloperKeyboard/AppDelegate.swift":
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/AppDelegate.o"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/AppDelegate.swiftdeps"
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/AppDelegate.d"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/AppDelegate.dia"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/AppDelegate.swiftconstvalues"
+"/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/Keyboard/Extensions/UIImageFromCALayer.swift":
+  object: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/UIImageFromCALayer.o"
+  dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/UIImageFromCALayer.d"
+  const-values: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/UIImageFromCALayer.swiftconstvalues"
+  swift-dependencies: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/UIImageFromCALayer.swiftdeps"
+  diagnostics: "/Users/cefgoose/Documents/projects/KaartKeyboard/KaartKeyboard/build/KaartKeyboard.build/Debug-iphonesimulator/Kaart Keyboard.build/Objects-normal/x86_64/UIImageFromCALayer.dia"
