@@ -1831,7 +1831,10 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
                 
                 let gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(self.longPressShortWord(_:)))
                 gesture.minimumPressDuration = 0.4
+                gesture.cancelsTouchesInView = true
+                gesture.delaysTouchesBegan = false
                 shortWordButton.addGestureRecognizer(gesture)
+                shortWordButton.isExclusiveTouch = true
                 
                 self.view.addSubview(shortWordButton)
                 arrayOfShortWordButton[rowIndex].append(shortWordButton)
