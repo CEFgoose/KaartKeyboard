@@ -1894,7 +1894,7 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         self.shortWordTxtFld.addGestureRecognizer(gesture)
         
         self.view.addSubview(shortWordTxtFld)
-        self.view.bringSubviewToFront(self.shortWordTxtFld)
+        self.view.bringSubview(toFront: self.shortWordTxtFld)
         
         tempRct.origin.x = tempRct.origin.x + tempRct.size.width + 2*spacing
         
