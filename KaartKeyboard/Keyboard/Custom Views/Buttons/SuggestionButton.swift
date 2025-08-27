@@ -53,13 +53,17 @@ class SuggestionButton: UIButton {
         titleLabel?.textAlignment = .center
         setTitleColor(UIColor.black, for: .normal)
         setTitleColor(UIColor.darkGray, for: .highlighted)
+        
         titleLabel?.sizeToFit()
         addTarget(self, action: #selector(SuggestionButton.buttonPressed(_:)), for: .touchUpInside)
         
-        // Add long press gesture recognizer
+        // Add long press gesture recognizer with crash protection
         let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(SuggestionButton.buttonLongPressed(_:)))
         longPressGesture.minimumPressDuration = 0.5
+        longPressGesture.cancelsTouchesInView = true
+        longPressGesture.delaysTouchesBegan = false
         addGestureRecognizer(longPressGesture)
+        self.isExclusiveTouch = true
     }
 
     required init?(coder aDecoder: NSCoder) {
@@ -73,8 +77,13 @@ class SuggestionButton: UIButton {
     }
     
     @objc func buttonLongPressed(_ longPressGestureRecognizer: UILongPressGestureRecognizer) {
-        if longPressGestureRecognizer.state == .began {
-            delegate?.handleLongPressForSuggestionButton(self)
+        guard longPressGestureRecognizer.state == .began else { return }
+        guard let delegate = delegate else { return }
+        
+        // Add crash protection
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            delegate.handleLongPressForSuggestionButton(self)
         }
     }
 }

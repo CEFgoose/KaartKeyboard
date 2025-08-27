@@ -29,6 +29,8 @@ class PredictiveTextScrollView: UIScrollView {
     // MARK: Overridden Methods
     
     override func touchesShouldCancel(in view: UIView) -> Bool {
-        return view is UIButton ? true : super.touchesShouldCancel(in: view)
+        // TEMPORARY: Disable touch cancellation to prevent crashes on long press
+        return false
+        // Original: return view is UIButton ? true : super.touchesShouldCancel(in: view)
     }
 }

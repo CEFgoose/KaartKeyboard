@@ -882,7 +882,15 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
             print("Error creating fallback language: \(error)")
             // Return a completely minimal language structure if JSON creation fails
             // Note: This would need to be implemented based on your actual Language initializer
-            fatalError("Unable to create fallback language. Check Language model structure.")
+            // Create minimal emergency fallback instead of crashing keyboard
+            let emergencyJSON = """
+            {
+                "title": "Emergency",
+                "rows": [{"row": [{"primary": "q", "secondary": "", "tertiary": []}]}]
+            }
+            """
+            let emergencyData = emergencyJSON.data(using: .utf8)!
+            return try! JSONDecoder().decode(Language.self, from: emergencyData)
         }
     }
 
@@ -1168,7 +1176,8 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
             
         }else{
             
-            var tempStr : NSString = shortWordTxtFld.text! as NSString
+            guard let textStr = shortWordTxtFld.text else { return }
+            var tempStr : NSString = textStr as NSString
             if shortWordTxtFld.text?.isEmpty == false  {
                 tempStr = tempStr.substring(to: tempStr.length - 1) as NSString
                 shortWordTxtFld.text = tempStr as String
@@ -1612,10 +1621,8 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
     }
     
     func handleLongPressForSuggestionButton(_ button: SuggestionButton) {
-        // Implementation for suggestion editing - similar to shortWord editing
-        print("Long press on suggestion: \(button.title)")
-        // TODO: Implement suggestion editing functionality
-        // This could open a text field to edit the suggestion, similar to longPressShortWord
+        // MINIMAL implementation to prevent crashes
+        // Simply do nothing for now - just prevent the crash
     }
     
     // MARK: TouchForwardingViewDelegate methods
@@ -1810,33 +1817,41 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         
         let userDefaults : UserDefaults = UserDefaults.standard
         
-        if ((userDefaults.object(forKey: "SHORT_WORD_ARR")) != nil){
-            shortWord = userDefaults.object(forKey: "SHORT_WORD_ARR")! as! [[String]]
+        if let shortWordData = userDefaults.object(forKey: "SHORT_WORD_ARR") as? [[String]] {
+            shortWord = shortWordData
         }
         
         for (rowIndex, row) in shortWord.enumerated(){
+            guard !row.isEmpty else { continue }
             var y: CGFloat = 0.0
             for index in 1...row.count{
+                let arrayIndex = index - 1
+                guard arrayIndex >= 0 && arrayIndex < row.count else { continue }
+                
                 shortWordButton = KeyButton(frame: CGRect(x: spacing * CGFloat(index) + wordKeyWidth * CGFloat(index-1), y: y, width: wordKeyWidth, height: keyHeight))
-                shortWordButton.setTitle(shortWord[rowIndex][index - 1], for: .normal)
-                shortWordButton.setTitleColor(UIColor(white: 245.0/245, alpha: 1.0), for: .normal)
+                shortWordButton.setTitle(row[arrayIndex], for: .normal)
+                shortWordButton.setTitleColor(UIColor.white, for: .normal)
                 let gradient = CAGradientLayer()
                 gradient.frame = self.shortWordButton.bounds
-                let gradientColors: [AnyObject] = [UIColor(red: 70.0/255, green: 70.0/255, blue: 70.0/255, alpha: 40.0).cgColor, UIColor(red: 60.0/255, green: 60.0/255, blue: 60.0/255, alpha: 1.0).cgColor]
+                let gradientColors: [AnyObject] = [UIColor(red: 70.0/255, green: 70.0/255, blue: 70.0/255, alpha: 1.0).cgColor, UIColor(red: 60.0/255, green: 60.0/255, blue: 60.0/255, alpha: 1.0).cgColor]
                 gradient.colors = gradientColors // Declaration broken into two lines to prevent 'unable to bridge to Objective C' error.
                 
-                shortWordButton.setBackgroundImage(UIImage.fromColor(UIColor(red: 122.0/255, green: 122.0/255, blue: 122.0/255, alpha: 1.0)), for: .normal)
-                shortWordButton.setBackgroundImage(UIImage.fromColor(UIColor.black), for: .selected)
+                // Clear any background images and set black background
+                shortWordButton.setBackgroundImage(nil, for: .normal)
+                shortWordButton.setBackgroundImage(nil, for: .selected) 
+                shortWordButton.backgroundColor = UIColor.black
                 shortWordButton.addTarget(self, action: #selector(KeyboardViewController.shortWordButtonPressed(_:)), for: .touchUpInside)
                 
-                let gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(self.longPressShortWord(_:)))
+                let gesture : UILongPressGestureRecognizer = UILongPressGestureRecognizer.init(target: self, action: #selector(KeyboardViewController.longPressShortWord(_:)))
                 gesture.minimumPressDuration = 0.4
-                gesture.cancelsTouchesInView = true
-                gesture.delaysTouchesBegan = false
                 shortWordButton.addGestureRecognizer(gesture)
-                shortWordButton.isExclusiveTouch = true
                 
                 self.view.addSubview(shortWordButton)
+                
+                // Ensure arrayOfShortWordButton has enough rows
+                while arrayOfShortWordButton.count <= rowIndex {
+                    arrayOfShortWordButton.append([])
+                }
                 arrayOfShortWordButton[rowIndex].append(shortWordButton)
             }
             y += keyHeight + spacing
@@ -1848,20 +1863,24 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         // Only handle the began state
         guard gesture.state == .began else { return }
         
-        // Safe validation of gesture.view before casting to UIButton
+        // PHASE 2: Add button selection with visual feedback
         guard let buttonView = gesture.view as? UIButton else { return }
         
-        // Safe check for selectedShortWordBtn before accessing its properties (border reset)
-        if let selectedBtn = selectedShortWordBtn {
-            selectedBtn.layer.borderWidth = 0.0
-            selectedBtn.layer.borderColor = UIColor.clear.cgColor
-        }
+        // Clear any previous selection
+        selectedShortWordBtn?.layer.borderWidth = 0.0
+        selectedShortWordBtn?.layer.borderColor = UIColor.clear.cgColor
         
-        predictiveTextScrollView.isHidden = true
-        
+        // Select new button with black border (visible on gray/white button)
         selectedShortWordBtn = buttonView
         selectedShortWordBtn?.layer.borderWidth = 3.0
-        selectedShortWordBtn?.layer.borderColor = UIColor.white.cgColor
+        selectedShortWordBtn?.layer.borderColor = UIColor.black.cgColor
+        
+        // Hide predictive text (with nil check)
+        if predictiveTextScrollView != nil {
+            predictiveTextScrollView.isHidden = true
+        }
+        
+        // PHASE 3: Add text field creation (now with crash protection)
         addShortWordTxtFld()
     }
     
@@ -1880,11 +1899,25 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
     
     func addShortWordTxtFld(){
         
+        // CRASH FIX: Check predictiveTextScrollView is not nil before accessing frame
+        guard predictiveTextScrollView != nil else { 
+            // Create edit UI using view bounds as fallback if predictiveTextScrollView is nil
+            createEditUIWithFallbackFrame()
+            return 
+        }
+        
         var tempRct: CGRect = predictiveTextScrollView.frame
         
-        tempRct.size.width = tempRct.size.width - keyWidth - 3*spacing
+        // Ensure frame is valid
+        guard tempRct.size.width > 0 && tempRct.size.height > 0 else { return }
         
-        tempRct.origin.x =  spacing
+        let calculatedWidth = tempRct.size.width - keyWidth - 3*spacing
+        tempRct.size.width = max(calculatedWidth, 50) // Minimum width of 50
+        
+        tempRct.origin.x = spacing
+        
+        // Ensure frame is positive
+        guard tempRct.size.width > 0 && tempRct.size.height > 0 else { return }
         
         self.shortWordTxtFld.removeFromSuperview()
         
@@ -1896,12 +1929,15 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         gesture.minimumPressDuration = 0.4
         self.shortWordTxtFld.addGestureRecognizer(gesture)
         
-        self.view.addSubview(shortWordTxtFld)
+        self.view.addSubview(self.shortWordTxtFld)
         self.view.bringSubview(toFront: self.shortWordTxtFld)
         
         tempRct.origin.x = tempRct.origin.x + tempRct.size.width + 2*spacing
         
         tempRct.size.width = keyWidth
+        
+        // Ensure Done button frame is valid
+        guard tempRct.size.width > 0 && tempRct.size.height > 0 else { return }
         
         doneBtn.removeFromSuperview()
         doneBtn = KeyButton.init(frame: tempRct)
@@ -1909,12 +1945,83 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         doneBtn.setTitle("Done", for: .normal)
         doneBtn.setBackgroundImage(UIImage.fromColor(UIColor.white), for: .normal)
         
-        doneBtn.addTarget(self, action: #selector(self.doneSelect(_:)), for: .touchUpInside)
+        doneBtn.addTarget(self, action: #selector(self.doneSelectSafe(_:)), for: .touchUpInside)
         
         doneBtn.backgroundColor = UIColor.gray
         self.view.addSubview(doneBtn)
         
         shiftMode = .on
+    }
+    
+    func createEditUIWithFallbackFrame() {
+        // Create text field using view bounds as fallback
+        let textFieldFrame = CGRect(x: spacing, y: 50, width: view.frame.width - keyWidth - 3*spacing, height: 40)
+        
+        self.shortWordTxtFld.removeFromSuperview()
+        self.shortWordTxtFld = UITextField(frame: textFieldFrame)
+        self.shortWordTxtFld.backgroundColor = UIColor.lightGray
+        self.view.addSubview(self.shortWordTxtFld)
+        
+        // Create Done button
+        let doneFrame = CGRect(x: textFieldFrame.maxX + spacing, y: 50, width: keyWidth, height: 40)
+        doneBtn.removeFromSuperview()
+        doneBtn = KeyButton(frame: doneFrame)
+        doneBtn.setTitle("Done", for: .normal)
+        doneBtn.backgroundColor = UIColor.gray
+        doneBtn.addTarget(self, action: #selector(self.doneSelectSafe(_:)), for: .touchUpInside)
+        self.view.addSubview(doneBtn)
+        
+        shiftMode = .on
+    }
+    
+    @objc func doneSelectSafe(_ btn: UIButton) {
+        // Get the new text from text field
+        let newStr = shortWordTxtFld.text?.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines) ?? ""
+        
+        // Update button text if not empty
+        if !newStr.isEmpty {
+            // Get old title BEFORE changing it
+            let oldTitle = selectedShortWordBtn?.titleLabel?.text ?? ""
+            
+            // Update button display
+            selectedShortWordBtn?.setTitle(newStr, for: .normal)
+            
+            // Save to persistent storage (with crash protection)
+            if !oldTitle.isEmpty {
+                updateShortWordArray(oldText: oldTitle, newText: newStr)
+            }
+        }
+        
+        // Clean up UI
+        shortWordTxtFld.isHidden = true
+        doneBtn.isHidden = true
+        shortWordTxtFld.removeFromSuperview()
+        
+        // Remove border from selected button
+        selectedShortWordBtn?.layer.borderWidth = 0.0
+        selectedShortWordBtn?.layer.borderColor = UIColor.clear.cgColor
+        
+        // Show predictive text again if it exists
+        if predictiveTextScrollView != nil {
+            predictiveTextScrollView.isHidden = false
+        }
+    }
+    
+    func updateShortWordArray(oldText: String, newText: String) {
+        // Update the shortWord array safely
+        for (rowIndex, row) in shortWord.enumerated() {
+            if row.contains(oldText) {
+                if let index = row.firstIndex(of: oldText) {
+                    shortWord[rowIndex][index] = newText
+                    
+                    // Save to UserDefaults with error handling
+                    let defaults = UserDefaults.standard
+                    defaults.set(shortWord, forKey: "SHORT_WORD_ARR")
+                    defaults.synchronize()
+                    break
+                }
+            }
+        }
     }
     
     @objc func pasteShortWord(_ gesture:UILongPressGestureRecognizer){
@@ -1941,6 +2048,7 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
             
             if row.contains(oldTitle){
                 guard let index = row.firstIndex(of: oldTitle) else { continue }
+                guard rowIndex < shortWord.count && index < shortWord[rowIndex].count else { continue }
                 shortWord[rowIndex][index] = newStr
                 
                 let defaults : UserDefaults = UserDefaults.standard
@@ -1957,7 +2065,8 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
         
         shortWordTxtFld.removeFromSuperview()
         
-        self.removeFromParentViewController()
+        // REMOVED: This was causing keyboard to disappear
+        // self.removeFromParentViewController()
 //        self.viewDidLoad()
 //        self.initializeKeyboard()
 //        self.updateViewConstraints()
@@ -1978,7 +2087,8 @@ class KeyboardViewController: UIInputViewController, CharacterButtonDelegate, Su
     
     func updateShortField(_ senderStr : String) -> Bool {
         if shortWordTxtFld.isHidden == false {
-            var tmepStr : NSString = shortWordTxtFld.text! as NSString
+            guard let textStr = shortWordTxtFld.text else { return false }
+            var tmepStr : NSString = textStr as NSString
             tmepStr = tmepStr.appending(senderStr) as NSString
             shortWordTxtFld.text = tmepStr as String
             if isSecondary{
